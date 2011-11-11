@@ -7,3 +7,13 @@ layout: default
 require 'something'
 
 {%  endhighlight %}
+
+
+{% for post in site.posts %}
+
+{{post.url}}
+
+{{post.content}}
+
+{% endfor %}
+

@@ -2,18 +2,11 @@
 layout: default
 ---
 
-{% highlight ruby %}
-#boom
-require 'something'
+{{posts}}
 
-{%  endhighlight %}
-
-
-{% for post in site.posts %}
-
-{{post.url}}
-
-{{post.content}}
-
-{% endfor %}
+      {% for post in site.posts %}
+        <div class="post" onClick="location.href='{{ post.url }}';">
+             {{ post.title }}
+         </div>
+        {% endfor %}
 
